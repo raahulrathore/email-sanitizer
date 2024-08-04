@@ -1,6 +1,6 @@
 {
   "name": "email-sanitizer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A utility package that detects and filters out temporary or disposable email addresses to prevent spam and ensure valid user registrations.",
   "main": "index.js",
   "type": "module",
