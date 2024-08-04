@@ -1,12 +1,13 @@
 import path from "path";
 import { fileURLToPath } from "url";
 import fs from "fs/promises";
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const filePath = path.join(__dirname, "./warehouse/email_list.txt");
 
 // Function to read the file and parse unique emails
-const parseUniqueEmails = async(filePath) =>{
+const parseUniqueEmails = async (filePath) => {
   try {
     const data = await fs.readFile(filePath, "utf8");
     // Split the file content by new line and create a Set for unique emails
@@ -21,7 +22,7 @@ const parseUniqueEmails = async(filePath) =>{
   } catch (err) {
     console.error("Error reading file:", err);
   }
-}
+};
 
 const getDomain = (email) => {
   const atIndex = email.lastIndexOf("@");
