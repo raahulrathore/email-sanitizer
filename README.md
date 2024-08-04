@@ -1,6 +1,6 @@
 # Email Sanitizer
 
-A utility package that detects and filters out temporary or disposable email addresses to prevent spam and ensure valid user registrations.
+A node utility package that detects and filters out temporary or disposable email addresses to prevent spam and ensure valid user registrations.
 
 ## Features
 
